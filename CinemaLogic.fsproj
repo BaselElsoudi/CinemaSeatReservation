@@ -1,0 +1,27 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>Exe</OutputType>
+    <TargetFramework>net8.0</TargetFramework>
+    <ImplicitUsings>enable</ImplicitUsings>
+    <Nullable>enable</Nullable>
+    <RuntimeIdentifier>win-x64</RuntimeIdentifier>
+    <!-- single-file publish uses PublishSingleFile and SelfContained in publish command -->
+  </PropertyGroup>
+
+  <ItemGroup>
+    <!-- List your F# source files in compile order. Program.fs must be last so its EntryPoint is used. -->
+    <Compile Include="Models.fs" />
+    <Compile Include="Logic.fs" />
+    <Compile Include="Storage.fs" />
+    <Compile Include="Program.fs" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <!-- Use System.Text.Json from the shared framework; explicit package not required.
+         If you used a package reference before and want to keep it, you can add it.
+         We'll rely on framework System.Text.Json so warnings about package vulnerability go away. -->
+    <!-- If you still need a package, add a PackageReference here. -->
+  </ItemGroup>
+
+</Project>
