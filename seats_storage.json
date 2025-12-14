@@ -1,0 +1,20 @@
+{
+  "reservations": [
+    {
+      "seat": {
+        "row": 1,
+        "col": 1
+      },
+      "ticketId": "1-1-20251213155912",
+      "client": "basel"
+    },
+    {
+      "seat": {
+        "row": 1,
+        "col": 2
+      },
+      "ticketId": "1-2-20251213193733",
+      "client": "Mohamed Maged"
+    }
+  ]
+}
